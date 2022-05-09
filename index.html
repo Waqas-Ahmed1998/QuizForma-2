@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Anybody:ital,wght@1,300;1,400&family=Changa:wght@500&family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;500;700&family=Fjalla+One&family=Francois+One&family=Grape+Nuts&family=Inter:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Oswald:wght@300;400;500;600;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,300;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Ranga:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Rubik+Bubbles&family=Send+Flowers&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&family=Tajawal&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Anybody:ital,wght@1,300;1,400&family=Changa:wght@500&family=Dancing+Script:wght@400;500;600;700&family=Domine:wght@400;500;700&family=Fjalla+One&family=Francois+One&family=Grape+Nuts&family=Inter:wght@100;200;300;400;500;600;700;800&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;700;900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Oswald:wght@300;400;500;600;700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,300;1,400&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Ranga:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Rokkitt:wght@300;400;500;600;700&family=Rubik+Bubbles&family=Send+Flowers&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&family=Tajawal&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&family=Vazirmatn:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,97 +18,109 @@
   <title>quiz-form</title>
 </head>
 
-<body class=" bg-[#414EC5]  ">
+<body class="">
+  <!-- bacground image  -->
+  <div class="absolute top-0 w-full h-full overflow-hidden overlay ">
+    <img src="./img/quizforma-2-bg.svg" alt="" class="hidden xl:block w-full object-cover overflow-hidden">
+  </div>
 
-
-  <div id="popup" class=" w-full md:max-w-[1200px]  top-0  ease-in-out   md:min-h-[695px] flex flex-col  text-center  bg-white shadow
-    min-h-[85vh]   mx-auto xl:mt-20 montserat relative ">
+  <div id="popup" class=" w-full xl:max-w-[735px]  top-0  ease-in-out   md:min-h-[569px] flex flex-col  text-center  bg-white
+  xl:shadow-[0_4px_10px_rgba(0,0,0,0.12)] min-h-[85vh]   mx-auto  montserat relative xl:mt-32 xl:rounded-md pb-10 ">
 
     <!-- top content  -->
-    <div class="flex relative justify-center md:justify-between items-center  p-6">
-      <h2 class="font-medium md:text-[20px] text-[#414EC5] "> Student Registration Form</h2>
-      <div class="md:space-x-3  hidden md:flex ">
+    <div class="flex relative justify-between items-center px-2 md:px-8 py-4">
+
+      <div class="space-x-3  flex items-center group cursor-pointer ">
         <!-- left arrow  -->
+
         <i
-          class="flex md:scale-[1.2] hover:border-[#414EC5] hover:text-[#4b57c2]  transition-colors ease-out items-center rounded-full border-[2px] text-[#C6C6C6] border-[#ECECEC] cursor-pointer "><svg
-            class="" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-            fill="currentColor">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z" />
-          </svg></i>
-        <!-- right arrow  -->
-        <i
-          class="flex md:scale-[1.2] hover:border-[#414EC5] hover:text-[#4b57c2] transition-colors ease-out items-center text-[#C6C6C6] rounded-full border-[2px] border-[#ECECEC] cursor-pointer "><svg
-            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor">
-            <path d="M0 0h24v24H0V0z" fill="none" />
-            <path
-              d="M9.31 6.71c-.39.39-.39 1.02 0 1.41L13.19 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.72 6.7c-.38-.38-1.02-.38-1.41.01z" />
-          </svg></i>
+          class="flex  hover:border-[#414EC5]  transition-colors ease-out items-center group-hover:text-[#1A6F6F] cursor-pointer "><svg
+            class="hover:text-[#1A6F6F]" width="11" height="11" viewBox="0 0 11 11" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="" clip-rule="evenodd"
+              d="M10.75 5.50001C10.75 5.67405 10.6808 5.84097 10.5577 5.96404C10.4347 6.08712 10.2678 6.15626 10.0937 6.15626H2.49039L5.30833 8.97288C5.36934 9.0339 5.41774 9.10633 5.45076 9.18605C5.48379 9.26577 5.50078 9.35122 5.50078 9.43751C5.50078 9.52379 5.48379 9.60924 5.45076 9.68896C5.41774 9.76868 5.36934 9.84111 5.30833 9.90213C5.24731 9.96315 5.17488 10.0115 5.09516 10.0446C5.01544 10.0776 4.92999 10.0946 4.8437 10.0946C4.75741 10.0946 4.67197 10.0776 4.59225 10.0446C4.51253 10.0115 4.44009 9.96315 4.37908 9.90213L0.441577 5.96463C0.380463 5.90367 0.331975 5.83125 0.298892 5.75152C0.265808 5.6718 0.248779 5.58632 0.248779 5.50001C0.248779 5.41369 0.265808 5.32821 0.298892 5.24849C0.331975 5.16876 0.380463 5.09634 0.441577 5.03538L4.37908 1.09788C4.5023 0.974654 4.66943 0.905426 4.8437 0.905426C5.01797 0.905426 5.1851 0.974654 5.30833 1.09788C5.43155 1.22111 5.50078 1.38824 5.50078 1.56251C5.50078 1.73677 5.43155 1.9039 5.30833 2.02713L2.49039 4.84376H10.0937C10.2678 4.84376 10.4347 4.9129 10.5577 5.03597C10.6808 5.15904 10.75 5.32596 10.75 5.50001Z"
+              fill="currentColor" />
+          </svg>
+        </i>
+        <span class="text-sm text-[#818181]">Previous</span>
       </div>
-      <div class="w-full bottom-0 left-0 absolute h-1 bg-[#ECECEC]">
-        <div class="w-[15%] h-1 bg-[#414EC5]"></div>
+      <!-- right arrow  -->
+      <div class="space-x-3  flex items-center cursor-pointer group ">
+        <!-- left arrow  -->
+        <span class="text-sm text-[#818181] ">Next</span>
+
+        <i class=" flex transition-colors ease-out items-center group-hover:text-[#1A6F6F] cursor-pointer "><svg
+            width=" 11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.250048 5.50001C0.250048 5.67405 0.319188 5.84097 0.442259 5.96404C0.56533 6.08712 0.732249 6.15626 0.906298 6.15626H8.50961L5.69167 8.97288C5.63066 9.0339 5.58226 9.10633 5.54924 9.18605C5.51621 9.26577 5.49922 9.35122 5.49922 9.43751C5.49922 9.52379 5.51621 9.60924 5.54924 9.68896C5.58226 9.76868 5.63066 9.84111 5.69167 9.90213C5.75269 9.96315 5.82512 10.0115 5.90484 10.0446C5.98456 10.0776 6.07001 10.0946 6.1563 10.0946C6.24259 10.0946 6.32803 10.0776 6.40775 10.0446C6.48747 10.0115 6.55991 9.96315 6.62092 9.90213L10.5584 5.96463C10.6195 5.90367 10.668 5.83125 10.7011 5.75152C10.7342 5.6718 10.7512 5.58632 10.7512 5.50001C10.7512 5.41369 10.7342 5.32821 10.7011 5.24849C10.668 5.16876 10.6195 5.09634 10.5584 5.03538L6.62092 1.09788C6.4977 0.974654 6.33057 0.905426 6.1563 0.905426C5.98203 0.905426 5.8149 0.974654 5.69167 1.09788C5.56845 1.22111 5.49922 1.38824 5.49922 1.56251C5.49922 1.73677 5.56845 1.9039 5.69167 2.02713L8.50961 4.84376H0.906298C0.732249 4.84376 0.56533 4.9129 0.442259 5.03597C0.319188 5.15904 0.250048 5.32596 0.250048 5.50001Z"
+              fill="currentColor" />
+          </svg>
+
+        </i>
       </div>
+
+
     </div>
 
     <!-- middle content  -->
 
-    <div class=" mt-[70px] relative  ">
+    <div class=" relative px-2 md:px-0 md:w-[90%] mx-auto  ">
 
-      <!-- left arrow mobile  -->
-      <i
-        class="md:hidden absolute left-[3%] top-[68%] flex   hover:border-[#414EC5] hover:text-[#4b57c2]  transition-colors ease-out items-center md:rounded-full md:border-[2px] text-[#C6C6C6] md:border-[#ECECEC] cursor-pointer "><svg
-          class="scale-[1.4]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-          fill="currentColor">
-          <path d="M0 0h24v24H0V0z" fill="none" />
-          <path
-            d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z" />
-        </svg></i>
-      <!-- right arrow mobile -->
-      <i
-        class="flex md:hidden absolute right-[3%] top-[68%] hover:border-[#414EC5] hover:text-[#4b57c2] transition-colors ease-out items-center text-[#C6C6C6]   cursor-pointer "><svg
-          class="scale-[1.4]" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-          fill="currentColor">
-          <path d="M0 0h24v24H0V0z" fill="none" />
-          <path
-            d="M9.31 6.71c-.39.39-.39 1.02 0 1.41L13.19 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.72 6.7c-.38-.38-1.02-.38-1.41.01z" />
-        </svg></i>
 
-      <div class="flex flex-col items-center self-start ">
+      <div class="flex flex-col items-center self-start  ">
 
-        <img src="./img/Name_Icon.svg" alt="" class="my-2">
-        <h2 class="md:text-base text-[#414EC5]">Student Name</h2>
-        <form action="" class=" mt-6 space-y-3  text-sm  max-w-[235px]   ">
 
-          <input type="text" placeholder="First Name"
-            class="placeholder-black  px-2 focus:ring-0 focus:outline-none rounded-[6px] w-full border border-[#414EC5]  min-h-[50px]">
-          <input type="text" placeholder="Middle Name"
-            class="placeholder-black  px-2 focus:ring-0 focus:outline-none rounded-[6px] w-full border border-[#414EC5]  min-h-[50px]">
-          <input type="text" placeholder="Last Name"
-            class=" placeholder-black  px-2 focus:ring-0 focus:outline-none rounded-[6px] w-full border border-[#414EC5]   min-h-[50px]">
+        <h2 class="text-base md:text-xl text-[#FF6247] rokit font-bold mb-4">Question</h2>
+        <div class="mb-4">
+          <span class=" sanspro text-xs tracking-wider  text-[#1A6F6F]">01</span>
+          <div class="w-[31px] border-t-[0.5px] border-[#656565]"></div>
+          <span class="sanspro text-xs tracking-wider  text-[#656565] font-extralight">10</span>
+        </div>
+        <h2 class="text-2xl md:text-[36px] popins text-[#1A6F6F] font-semibold md:leading-[53px]">When are you hoping to
+          have
+          the project
+          completed by?</h2>
+        <form action="" class=" mt-10 space-y-3  text-sm w-full md:w-auto     ">
+          <div class="  md:w-[526px] bg-[#F5F5F5] border-none outline-none flex rounded-[6px] px-4 relative py-1 ">
+            <input type="text" placeholder="Type here to continue "
+              class="placeholder-[#A5A5A5] italic text-sm md:text-xl popins font-light   focus:ring-0 focus:outline-none  w-full  border  min-h-[50px] bg-transparent border-none outline-none ">
+            <button>
+              <i class="flex items-center"><svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 0L12.57 1.393L20.15 9H0V11H20.15L12.57 18.573L14 20L24 10L14 0Z" fill="#FF6247" />
+                </svg>
+              </i>
+            </button>
+            <div class="absolute -bottom-0 border border-[#9A9A9A] w-[98%] rounded-full left-[50%] translate-x-[-50%] ">
+            </div>
+          </div>
 
         </form>
       </div>
+      <div id="bottom-text "
+        class=" w-full mt-16  px-2 md:px-14 align-bottom justify-self-end justify-center  self-end  ">
 
-    </div>
-    <div id="bottom-text"
-      class=" w-full  px-2 md:px-14 align-bottom justify-self-end justify-center  self-end absolute bottom-10 ">
+        <p class="popins text-[#818181] text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Etiam eu
+          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+          sollicitudin lacus, ut interdum tellus elit sed risus. </p>
+        <!-- <div class="space-x-2 justify-center text-sm text-[#757575] diclaimer flex items-center">
+          <i class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 5V7M10 9V15" stroke="#414EC5" stroke-width="2" stroke-linejoin="round" />
+              <circle cx="10" cy="10" r="9" stroke="#414EC5" stroke-width="2" />
+            </svg></i>
+          <a href="" class="text-[#414EC5]"> Help with this question</a>
 
-      <div class="space-x-2 justify-center text-sm text-[#757575] diclaimer flex items-center">
-        <i class=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 5V7M10 9V15" stroke="#414EC5" stroke-width="2" stroke-linejoin="round" />
-            <circle cx="10" cy="10" r="9" stroke="#414EC5" stroke-width="2" />
-          </svg></i>
-        <a href="" class="text-[#414EC5]"> Help with this question</a>
-
+        </div> -->
       </div>
     </div>
 
+
   </div>
-  <footer class="flex just-center items-center w-full flex-col pt-8 pb-2 px-2 space-y-3">
-    <h3 class="text-xs md:text-sm text-white popins font-extralight">Powered by</h3>
-    <img src="./img/Quizforma-logo.svg" alt="" class="w-32  md:w-auto ">
-    <h3 class="text-xs md:text-sm text-white popins font-extralight">Create your survey now</h3>
+  <footer class="flex just-center items-center w-full flex-col pt-8 pb-2 px-2 space-y-3 absolute bottom-5 ">
+    <h3 class="text-xs md:text-sm text-[#0B1636] popins font-light">Powered by</h3>
+    <img src="./img/QuizformLogo.svg" alt="" class="w-32  md:w-auto ">
+    <h3 class="text-xs md:text-sm text-[#0B1636] popins font-light">Create your survey now</h3>
 
   </footer>
 

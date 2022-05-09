@@ -4,7 +4,7 @@
 
 @layer components {
   .overlay {
-    @apply after:absolute   after:top-0 after:left-0 after:w-full after:h-full after:bg-black/20
+    @apply after:absolute   after:top-0 after:left-0 after:w-full after:h-full after:bg-white/50
   }
 
 }
@@ -22,11 +22,22 @@ body {
   font-family: 'Poppins', sans-serif;
 
 }
+.rokit{
+font-family: 'Rokkitt', serif;
+
+}
+.sanspro{
+  font-family: 'Lobster', cursive;
+
+
+
+
+}
 .rgba {
   background-color: rgba(255,255,255, 0.9);
 }
-.shadow {
-  box-shadow: rgb(0 0 0 / 15%) 0px 2px 10px;
+.shadoww {
+  box-shadow:  0px 4px 10px rgba(0, 0, 0, 0.12);
 }
 .times {
   font-family: 'Merriweather', serif;
@@ -57,6 +68,7 @@ font-family: 'Changa', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Domine', serif;
 font-family: 'Fjalla One', sans-serif;
+font-family: 'Francois One', sans-serif;
 font-family: 'Grape Nuts', cursive;
 font-family: 'Inter', sans-serif;
 font-family: 'Lato', sans-serif;
@@ -72,6 +84,7 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Prompt', sans-serif;
 font-family: 'Ranga', cursive;
 font-family: 'Roboto', sans-serif;
+font-family: 'Rokkitt', serif;
 font-family: 'Rubik Bubbles', cursive;
 font-family: 'Send Flowers', cursive;
 font-family: 'Source Sans Pro', sans-serif;
